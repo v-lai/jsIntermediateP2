@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Exercise</title>
+</head>
+
+<body>
+    <div id="container">
+        <h1 id="welcome"></h1>
+        <div class="list-container">
+            <ul class="nav">
+                <li class="nav-item">Home</li>
+                <li class="nav-item">About Us</li>
+                <li class="nav-item">Contact</li>
+                <li class="nav-item">Careers</li>
+                <li class="nav-item">Apply</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <ul class="footer-nav">
+                <li class="footer-nav-item">Learn More</li>
+                <li class="footer-nav-item">Blog</li>
+                <li class="footer-nav-item">Email Us</li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        // What is jQuery? What does it enable you to do?
+        // jQuery is a JS library that allows you to do DOM manipulation 
+        // and is helpful for AJAX.
+
+        // What is the difference between a jQuery object and HTML Element?
+        // A jQuery object is an array-like object that contains DOM elements,
+        // while an HTML element gets the reference to the element directly.
+
+        // What does the $ represent in jQuery?
+        // $ is an alias/nickname for jQuery
+
+        // Write the jQuery selectors/code to do the following:
+        // Write the necessary to code wait for the DOM to load in jQuery.
+        $(function () {
+            // Select the footer element.
+            var $footer = $('.footer-container');
+            // Select the div with an id of "container".
+            var $container = $('#container');
+            // Select all of the lis inside of the ul with a class of nav.
+            var $lis = $('.nav li');
+            // Select the third li inside of the div with a class of list-container.
+            var $thirdLi = $('.list-container li:nth-child(3)');
+            // Select only the last li in each of the uls.
+            var $lastLis = $('ul li:last-child');
+        });
+    </script>
+</body>
+
+</html>
