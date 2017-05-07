@@ -1,0 +1,23 @@
+body {
+    padding: 50px;
+}
+
+img {
+    max-width: 300px;
+    max-height: 250px;
+    border: 3px solid darkslateblue;
+    margin: 5px;
+    padding: 5px;
+}
+
+li {
+    list-style: none;
+}
+
+li:hover {
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
